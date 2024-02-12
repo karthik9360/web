@@ -63,6 +63,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
 	
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	
+
 </head>
 
 <body>
@@ -209,9 +211,9 @@
                             <h2>Battery Capacity</h2>
                         </div>
 						<div class="battery-widget">
-						<div class="battery-label">Portlift 1: <span id="source1">80%</span></div>
+						<div class="battery-label">Portlift 1: <span id="source1">20%</span></div>
 							<div class="battery-bar">
-								<div class="battery-fill-1" style="width: 80%;"></div>
+								<div class="battery-fill-1" style="width: 20%;"></div>
 							</div>
 						</div><br>
 						<div class="battery-widget">
@@ -316,16 +318,255 @@
 	<div class="form-element-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-24">
+                <div class="col-lg-6 col-md-4 col-sm-4 col-xs-6">
 					<div class="form-element-list">
                         <div class="basic-tb-hd">
-                            <h2>Speed Measurment</h2>
+                            <h2>GPS Distance</h2>
 						</div>
+						<div class="container">
+							<div class="circle-content">
+								<div class="circle">15 km/h</div>
+								<p>Current Speed</p>
+							</div>
+							<div class="circle-content">
+								<div class="circle">40 km/h</div>
+								<p>Speed limit</p>
+							</div>
+							<div class="circle-content">
+								<div class="circle">01:20:59</div>
+								<p>Duration</p>
+							</div>
+						</div><br>
+						<p>Straight Line Distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPS Accuracy</p>
+						<hr class="solid">
+						<p>1.7 km&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16 m</p><br>
+						<p>Odometer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Stoped</p>
+						<hr class="solid">
+						<p>18.6 km&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:46</p><br>
+						<p>Device Temp.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total Time
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<hr class="solid">
+						<p>32.0 C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:51</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-4 col-sm-4 col-xs-6">
+					<div class="form-element-list">
+                        <div class="basic-tb-hd">
+                            <h2>Capacity Measurment</h2>
+						</div><br>
+						<div class="table-responsive">
+                            <table id="data-table-basic" class="table table-striped">
+                                <thead>
+                                    <tr>
+										<th>MODEL</th>
+                                        <th>SIZE INCHES</th>
+                                        <th>FORK WIDTH</th>
+                                        <th>FORK LENGTH</th>
+                                        <th>WEIGHT LBS/PR</th>
+                                        <th>CAPACITY</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+										<td>448-ST</td>
+                                        <td>5X48</td>
+                                        <td>4"</td>
+                                        <td>32"</td>
+                                        <td>60</td>
+                                        <td>2500@24"</td>
+                                    </tr>
+                                    <tr>
+										<td>454-ST</td>
+                                        <td>5X54</td>
+                                        <td>4"</td>
+                                        <td>36"</td>
+                                        <td>62</td>
+                                        <td>2500@27"</td>
+                                    </tr>
+                                    <tr>
+										<td>460-ST</td>
+                                        <td>5X60</td>
+                                        <td>4"</td>
+                                        <td>40"</td>
+                                        <td>72</td>
+                                        <td>2500@30"</td>
+                                    </tr>
+                                    <tr>
+										<td>463-ST</td>
+                                        <td>5X63</td>
+                                        <td>4"</td>
+                                        <td>42"</td>
+                                        <td>76</td>
+                                        <td>2500@32"</td>
+                                    </tr>
+                                    <tr>
+										<td>472-ST</td>
+                                        <td>5X72</td>
+                                        <td>4"</td>
+                                        <td>48"</td>
+                                        <td>84</td>
+                                        <td>2500@36"</td>
+                                    </tr>
+                                    <tr>
+										<td>484-ST</td>
+                                        <td>5X84</td>
+                                        <td>4"</td>
+                                        <td>56"</td>
+                                        <td>100</td>
+                                        <td>2500@42"</td>
+                                    </tr>
+									<tr>
+										<td>490-ST</td>
+                                        <td>5X90</td>
+                                        <td>4"</td>
+                                        <td>60"</td>
+                                        <td>104</td>
+                                        <td>2500@45"</td>
+                                    </tr>
+                                    <tr>
+										<td>496-ST</td>
+                                        <td>5X96</td>
+                                        <td>4"</td>
+                                        <td>64"</td>
+                                        <td>106</td>
+                                        <td>2500@48"</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><br><br>
+	<!-- Google Map area End-->
+    <div class="google-map-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 30px;">
+                    <div class="google-map-single" style="height: 500px;">
+						<h2>MAP</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31840778.15188319!2d59.125561445491066!3d13.047524999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1707734198509!5m2!1sen!2sin" width="1100" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Google Map area End-->
+	<!-- Data Table area Start-->
+    <div class="data-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="data-table-list">
+                        <div class="basic-tb-hd">
+                            <h2>Status Table</h2>
+                        </div>
+                        <div class="table-responsive">
+                            <table id="data-table-basic" class="table table-striped">
+                                <thead>
+                                    <tr>
+										<th>S/NO</th>
+                                        <th>FORK WIDTH</th>
+                                        <th>FORK LENGTH</th>
+                                        <th>DISTANCE</th>
+                                        <th>SPEED</th>
+                                        <th>DATE</th>
+										<th>TIME</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+										<td>1</td>
+                                        <td>4"</td>
+                                        <td>32"</td>
+                                        <td>70 km</td>
+                                        <td>15 km/h</td>
+                                        <td>12/12/2020</td>
+										<td>09:50</td>
+                                    </tr>
+                                    <tr>
+										<td>2</td>
+                                        <td>4"</td>
+                                        <td>36"</td>
+                                        <td>90 km</td>
+                                        <td>16 km/h</td>
+                                        <td>12/01/2021</td>
+										<td>09:45</td>
+                                    </tr>
+                                    <tr>
+										<td>3</td>
+                                        <td>4"</td>
+                                        <td>40"</td>
+                                        <td>100 km</td>
+                                        <td>20 km/h</td>
+                                        <td>28/02/2021</td>
+										<td>10:50</td>
+                                    </tr>
+                                    <tr>
+										<td>4</td>
+                                        <td>4"</td>
+                                        <td>42"</td>
+                                        <td>50 km</td>
+                                        <td>13 km/h</td>
+                                        <td>09/03/2021</td>
+										<td>11:06</td>
+                                    </tr>
+                                    <tr>
+										<td>5</td>
+                                        <td>4"</td>
+                                        <td>48"</td>
+                                        <td>40 km</td>
+                                        <td>10 km/h</td>
+                                        <td>06/04/2021</td>
+										<td>12:10</td>
+                                    </tr>
+                                    <tr>
+										<td>6</td>
+                                        <td>4"</td>
+                                        <td>56"</td>
+                                        <td>70 km</td>
+                                        <td>15 km/h</td>
+                                        <td>30/05/2021</td>
+										<td>01:20</td>
+                                    </tr>
+									<tr>
+										<td>7</td>
+                                        <td>4"</td>
+                                        <td>60"</td>
+                                        <td>80 km</td>
+                                        <td>15 km/h</td>
+                                        <td>04/06/2021</td>
+										<td>02:50</td>
+                                    </tr>
+                                    <tr>
+										<td>8</td>
+                                        <td>4"</td>
+                                        <td>64"</td>
+                                        <td>60 km</td>
+                                        <td>18 km/h</td>
+                                        <td>25/07/2021</td>
+										<td>03:45</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <!-- Table area End-->
     <!-- jquery
 		============================================ -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -389,6 +630,7 @@
 		============================================ -->
     <script src="js/chat/moment.min.js"></script>
     <script src="js/chat/jquery.chat.js"></script>
+	
     <!-- main JS
 		============================================ -->
     <script src="js/main.js"></script>
@@ -485,6 +727,7 @@
             }
         });
     </script>
+	
 
 </body>
 
