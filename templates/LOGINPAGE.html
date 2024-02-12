@@ -50,25 +50,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- modernizr JS
 		============================================ -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	
-
-<script>
-$(document).ready(function(){
-    $("#loginForm").submit(function(e){
-        e.preventDefault();
-        var password = $("#password").val();
-        if(password !== "123456"){
-            alert("Incorrect password! Please try again.");
-        } else {
-			window.location.href="MAP.html";
-            alert("Login successful!");
-        }
-    });
-});
-</script>
 
 </head>
 
@@ -168,6 +150,23 @@ $(document).ready(function(){
     <!-- main JS
 		============================================ -->
     <script src="js/main.js"></script>
+	
+	<script>
+$(document).ready(function(){
+    $("#loginForm").submit(function(e){
+        e.preventDefault();
+        var password = $("#password").val();
+		var errorMessage = $("#errorMessage");
+        if(password !== "123456"){
+            alert("Incorrect password! Please try again.");
+			$("#password").attr("type", "text");
+        } else {
+			window.location.href="status.html";
+            alert("Login successful!");
+        }
+    });
+});
+</script>
 </body>
 
 </html>
