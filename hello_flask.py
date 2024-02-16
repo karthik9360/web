@@ -3,21 +3,19 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 @app.route("/")
-
-@app.route("/login")
-def login():
+def login_page():
     return render_template("LOGINPAGE.html")
 
-@app.route("/STATUS.html")
-def about():
-    return render_template("STATUS.html")
-    
-@app.route("/DEVICEMODEL.html")
-def model():
+@app.route("/status", methods=['POST'])
+def status_page():
+    return render_template('STATUS.html')
+
+@app.route("/device")
+def device():
     return render_template("DEVICEMODEL.html")
-    
-@app.route("/AUTHENTICATION.html")
-def authen():
+
+@app.route("/authentication")
+def authentication_page():
     return render_template("AUTHENTICATION.html")
 
 if __name__ == "__main__":
