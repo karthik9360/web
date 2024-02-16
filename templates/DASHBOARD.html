@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Status page</title>
+    <title>Dashboard</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -74,26 +74,11 @@
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="header-top-menu">
                         <ul class="nav navbar-nav notika-top-nav">
-                            <li class="nav-item dropdown">
-                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-search"></i></span></a>
-                                <div role="menu" class="dropdown-menu search-dd animated flipInX">
-                                    <div class="search-input">
-                                        <i class="notika-icon notika-left-arrow"></i>
-                                        <input type="text" />
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-chat"></i></span></a>
-                                <div role="menu" class="dropdown-menu message-dd chat-dd animated zoomIn">
-                                    <div class="hd-mg-tt">
-                                        <h2>Chat</h2>  
-                                    </div>
-                                </div>
-                            </li>
-							<li class="nav-item"><a href="/device" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span class="glyphicon">&#xe081;</span></a>
+							<li class="nav-item">
+								<a href="/device" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span class="glyphicon">&#xe081;</span></a>
                             </li>
 							<li>
-								<a href="LOGINPAGE.html" role="button" aria-expanded="false"><span>Logout</span></a>
+								<a href="/" role="button"><span>Logout</span></a>
 							</li>
                         </ul>
                     </div>
@@ -154,6 +139,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 30px;">
                     <div class="google-map-single" style="height: 500px;">
+						<h2>Map</h2>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31840778.15188319!2d59.125561445491066!3d13.047524999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1707734198509!5m2!1sen!2sin" width="1100" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -370,12 +356,12 @@
                         <div class="basic-tb-hd">
                             <h2>Status Table</h2>
                         </div>
-                        <div class="table-responsive">
+                        <div class="table-responsive"><a href="/device">
                             <table id="data-table-basic" class="table table-striped">
                                 <thead>
                                     <tr>
 										<th>S/NO</th>
-                                        <th>Portlift Driver</th>
+                                        <th>Fortlift Driver</th>
                                         <th>Status</th>
                                         <th>Vehicle</th>
                                         <th>Battery 
@@ -434,13 +420,27 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
             </div>
         </div>
     </div><br><br>
     <!-- Table area End-->
+	<!-- Start Footer area-->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2024 . All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer area-->
+	
     <script src="static/js/vendor/jquery-1.12.4.min.js"></script>
     <!-- bootstrap JS
 		============================================ -->
@@ -498,12 +498,12 @@
     <!-- Google map JS
 		============================================ -->
     <script src="static/js/google.maps/google.maps2-active.js"></script>
-    <script async defer src="static/https://maps.googleapis.com/maps/api/js?key=AIzaSyCVOIQ3qXUCmKVVV7DVexPzlgBcj5mQJmQ&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVOIQ3qXUCmKVVV7DVexPzlgBcj5mQJmQ&callback=initMap"></script>
     <!-- main JS
 		============================================ -->
     <script src="static/js/main.js"></script>
 	<!-- tawk chat JS
 		============================================ -->
-    <script src="static/js/tawk-chat.js"></script>
+
 
 </html>

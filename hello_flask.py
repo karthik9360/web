@@ -6,17 +6,17 @@ app = Flask(__name__)
 def login_page():
     return render_template("LOGINPAGE.html")
 
-@app.route("/status", methods=['POST'])
+@app.route("/dashboard", methods=['GET','POST'])
 def status_page():
-    return render_template('STATUS.html')
+    return render_template('DASHBOARD.html')
 
 @app.route("/device")
 def device():
     return render_template("DEVICEMODEL.html")
 
-@app.route("/authentication")
+@app.route("/individual")
 def authentication_page():
-    return render_template("AUTHENTICATION.html")
+    return render_template("INDIVIDUALPAGE.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

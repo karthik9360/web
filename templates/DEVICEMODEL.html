@@ -56,7 +56,7 @@
     <link rel="stylesheet" href="static/css/responsive.css">
     <!-- modernizr JS
 		============================================ -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="static/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -69,33 +69,17 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="logo-area">
-                       <p style="color:white; font-size: 25px;">INNOSPACE</P>
+                       <a href="/dashboard"><p style="color:white; font-size: 25px;">INNOSPACE</P></a>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="header-top-menu">
                         <ul class="nav navbar-nav notika-top-nav">
-                            <li class="nav-item dropdown">
-                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-search"></i></span></a>
-                                <div role="menu" class="dropdown-menu search-dd animated flipInX">
-                                    <div class="search-input">
-                                        <i class="notika-icon notika-left-arrow"></i>
-                                        <input type="text" />
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-chat"></i></span></a>
-                                <div role="menu" class="dropdown-menu message-dd chat-dd animated zoomIn">
-                                    <div class="hd-mg-tt">
-                                        <h2>Chat</h2>  
-                                    </div>
-                                </div>
-                            </li>
 							<li class="nav-item" >
-							<a href="/authentication" role="button"  aria-expanded="false" class="nav-link dropdown-toggle"><span class="glyphicon">&#xe081;</span></a>
+								<a href="/individual" role="button"  aria-expanded="false" class="nav-link dropdown-toggle"><span class="glyphicon">&#xe081;</span></a>
                             </li>
 							<li class="nav-item">
-								<a href="LOGINPAGE.html" role="button" ><span>Logout</span></a>
+								<a href="/" role="button" ><span>Logout</span></a>
 							</li>
                         </ul>
                     </div>
@@ -117,7 +101,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <div class="nk-int-st">
-                                        <input type="text" class="form-control input-sm" placeholder="Name">
+                                        <input type="text" class="form-control input-sm" placeholder="Vehicle Name">
                                     </div>
                                 </div>
                             </div>
@@ -126,14 +110,14 @@
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                 <div class="form-group">
                                     <div class="nk-int-st">
-                                        <input type="text" class="form-control" placeholder="Address 1">
+                                        <input type="text" class="form-control" placeholder="Serial NO">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                 <div class="form-group">
                                     <div class="nk-int-st">
-                                        <input type="text" class="form-control" placeholder="Address 2">
+                                        <input type="text" class="form-control" placeholder="Device Model">
                                     </div>
                                 </div>
                             </div>
@@ -142,51 +126,21 @@
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <div class="form-group">
                                     <div class="nk-int-st">
-                                        <input type="text" class="form-control" placeholder="City">
+                                        <input type="text" class="form-control" placeholder="Unique ID">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <div class="form-group">
                                     <div class="nk-int-st">
-                                        <input type="text" class="form-control" placeholder="State">
+                                        <input type="text" class="form-control" placeholder="Vehicle Model">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <div class="form-group">
                                     <div class="nk-int-st">
-                                        <input type="text" class="form-control" placeholder="Zip">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <div class="form-group">
-                                    <div class="nk-int-st">
-                                        <input type="text" class="form-control" placeholder="Phone">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <div class="form-group">
-                                    <div class="nk-int-st">
-                                        <input type="text" class="form-control" placeholder="Fox">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <div class="form-group">
-                                    <div class="nk-int-st">
-                                        <input type="text" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <div class="form-group">
-                                    <div class="nk-int-st">
-                                        <input type="text" class="form-control" placeholder="Pincode">
+                                        <input type="text" class="form-control" placeholder="Driver">
                                     </div>
                                 </div>
                             </div>
@@ -211,23 +165,36 @@
                             <table id="data-table-basic" class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Address</th>
-                                        <th>City</th>
-                                        <th>State</th>
-                                        <th>Phone</th>
-                                        <th>Email</th>
+                                        <th>Vehicle Name</th>
+                                        <th>Serial NO</th>
+                                        <th>Device Model</th>
+                                        <th>Unique ID</th>
+                                        <th>Vehicle Model</th>
+                                        <th>Driver</th>
 										<th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+									<tr>
+                                        <td class="data"></td>
+                                        <td class="data"></td>
+                                        <td class="data"></td>
+                                        <td class="data"></td>
+                                        <td class="data"></td>
+                                        <td class="data"></td>
+										<td>
+											<button class="save"> Save </button>  
+											<button class="edit"> Edit </button>  
+											<button class="delete"> Delete </button>
+										</td>
+									</tr>
                                     <tr>
-                                        <td class="data">Tiger Nixon</td>
-                                        <td class="data">System Technical</td>
-                                        <td class="data">Edinburgh</td>
-                                        <td class="data">California</td>
-                                        <td class="data">201104525</td>
-                                        <td class="data">dkjdn@gmail.com</td>
+                                        <td class="data"><a href="/individual">Fortlift 1</a></td>
+                                        <td class="data"><a href="/individual">89465</a></td>
+                                        <td class="data"><a href="/individual">e1-2010</a></td>
+                                        <td class="data"><a href="/individual">2-02020-2</a></td>
+                                        <td class="data"><a href="/individual">0120</a></td>
+                                        <td class="data"><a href="/individual">Tiger Nixon</a></td>
 										<td>
 											<button class="save"> Save </button>  
 											<button class="edit"> Edit </button>  
@@ -235,12 +202,12 @@
 										</td>
                                     </tr>
                                     <tr>
-                                        <td class="data">Garrett Winters</td>
-                                        <td class="data">Aountant Technical</td>
-                                        <td class="data">Tokyo</td>
-                                        <td class="data">Japan</td>
-                                        <td class="data">78844884</td>
-                                        <td class="data">45sdssn@gmail.com</td>
+                                        <td class="data"><a href="/individual">Fortlift 2</a></td>
+                                        <td class="data"><a href="/individual">658245</a></td>
+                                        <td class="data"><a href="/individual">lu-8545</a></td>
+                                        <td class="data"><a href="/individual">0002-2020</a></td>
+                                        <td class="data"><a href="/individual">3645</a></td>
+                                        <td class="data"><a href="/individual">Garrett Winters</a></td>
 										<td>
 											<button class="save"> Save </button>  
 											<button class="edit"> Edit </button>  
@@ -248,12 +215,12 @@
 										</td>
                                     </tr>
                                     <tr>
-                                        <td class="data">Ashton Cox</td>
-                                        <td class="data">Junior san Technical</td>
-                                        <td class="data">San Francisco</td>
-                                        <td class="data">California</td>
-                                        <td class="data">204354512</td>
-                                        <td class="data">ggkjdn@gmail.com</td>
+                                        <td class="data"><a href="/individual">Fortlift 3</a></td>
+                                        <td class="data"><a href="/individual">201458</a></td>
+                                        <td class="data"><a href="/individual">as-855455</a></td>
+                                        <td class="data"><a href="/individual">09-98578</a></td>
+                                        <td class="data"><a href="/individual">98754</a></td>
+                                        <td class="data"><a href="/individual">Ashton Cox</a></td>
 										<td>
 											<button class="save"> Save </button>  
 											<button class="edit"> Edit </button>  
@@ -262,13 +229,12 @@
 										</td>
                                     </tr>
                                     <tr>
-                                        <td class="data">Cedric Kelly</td>
-                                        <td class="data">SeniorJav D
-										Technical</td>
-                                        <td class="data">Edinburgh</td>
-                                        <td class="data">Scotland</td>
-                                        <td class="data">20888889</td>
-                                        <td class="data">ydyf45@gmail.com</td>
+                                        <td class="data"><a href="/individual">Fortlift 4</a></td>
+                                        <td class="data"><a href="/individual">5454454</a></td>
+                                        <td class="data"><a href="/individual">po-96373</a></td>
+                                        <td class="data"><a href="/individual">55-24-686</a></td>
+                                        <td class="data"><a href="/individual">545645</a></td>
+                                        <td class="data"><a href="/individual">Cedric Kelly</a></td>
 
 										<td>
 											<button class="save"> Save </button>  
@@ -277,12 +243,12 @@
 										</td>
                                     </tr>
                                     <tr>
-                                        <td class="data">Airi Satou</td>
-                                        <td class="data">Aountant Technical</td>
-                                        <td class="data">Tokyo</td>
-                                        <td class="data">Japan</td>
-                                        <td class="data">8845628</td>
-                                        <td class="data">gn89n@gmail.com</td>
+                                        <td class="data"><a href="/individual">Fortlift 5</a></td>
+                                        <td class="data"><a href="/individual">964578</a></td>
+                                        <td class="data"><a href="/individual">hf-46598</a></td>
+                                        <td class="data"><a href="/individual">89-98-89</a></td>
+                                        <td class="data"><a href="/individual">5435543</a></td>
+                                        <td class="data"><a href="/individual">Airi Satou</a></td>
 										<td>
 											<button class="save"> Save </button>  
 											<button class="edit"> Edit </button>  
@@ -290,25 +256,12 @@
 										</td>
                                     </tr>
                                     <tr>
-                                        <td class="data">Brielle Williamson</td>
-                                        <td class="data">Integration Technical</td>
-                                        <td class="data">New York</td>
-                                        <td class="data">New York</td>
-                                        <td class="data">201452</td>
-                                        <td class="data">d54n@gmail.com</td>
-										<td>
-											<button class="save"> Save </button>  
-											<button class="edit"> Edit </button>  
-											<button class="delete"> Delete </button>
-										</td>
-									</tr>
-									<tr>
-                                        <td class="data"></td>
-                                        <td class="data"></td>
-                                        <td class="data"></td>
-                                        <td class="data"></td>
-                                        <td class="data"></td>
-                                        <td class="data"></td>
+                                        <td class="data"><a href="/individual">Fortlift 6</a></td>
+                                        <td class="data"><a href="/individual">965452</a></td>
+                                        <td class="data"><a href="/individual">yt-84647</a></td>
+                                        <td class="data"><a href="/individual">25-85-65-44</a></td>
+                                        <td class="data"><a href="/individual">201452</a></td>
+                                        <td class="data"><a href="/individual">Brielle Williamson</a></td>
 										<td>
 											<button class="save"> Save </button>  
 											<button class="edit"> Edit </button>  
@@ -324,6 +277,19 @@
         </div>
     </div>
     <!-- Data Table area End-->
+	<!-- Start Footer area-->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2024 . All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer area-->
     <!-- jquery
 		============================================ -->
     <script src="static/js/vendor/jquery-1.12.4.min.js"></script>
@@ -366,7 +332,7 @@
 		============================================ -->
     <script src="static/js/knob/jquery.knob.js"></script>
     <script src="static/js/knob/jquery.appear.js"></script>
-    <script src="static/static/js/knob/knob-active.js"></script>
+    <script src="static/js/knob/knob-active.js"></script>
     <!--  Chat JS
 		============================================ -->
     <script src="static/js/chat/jquery.chat.js"></script>
@@ -389,9 +355,9 @@
     <script src="static/js/main.js"></script>
 	<!-- tawk chat JS
 		============================================ -->
-   <script src="static/js/tawk-chat.js"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
+   
+   <script src="static/js/jj-jquery.min.js"></script>
+  
 <script>  
 $(document).on('click', '.edit', function() {  
   $(this).parent().siblings('td.data').each(function() {  

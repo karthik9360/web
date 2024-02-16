@@ -2722,7 +2722,7 @@ hr {
     content: '\e91e';
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:focus, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-    background: #00c292;
+    background: #000000;
     color: #fff!important;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button {
@@ -2759,7 +2759,7 @@ hr {
     border-top: 0px solid #ccc;
     border-left: 0px solid #ccc;
     border-right: 0px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-bottom: px solid #ccc;
     padding: 0px;
 	resize: none;
 	border-radius:0px;
@@ -3613,7 +3613,7 @@ textarea.auto-size {
 }
 
 .nk-form, .error-page-wrap{
-    background:#a09b9b63;
+    background:#fff;
     box-shadow:0 1px 1px rgba(0,0,0,.1);
     border-radius:2px;
 }
