@@ -62,6 +62,8 @@
 	
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+	
 
 </head>
 
@@ -166,21 +168,13 @@
                     <div class="form-element-list" style="width: 100%; height: 485px;">
                         <div class="basic-tb-hd">
                             <h2>Live Status</h2>
-                        </div>
+                        </div><br>
                             <table id="data-table-basic" class="table table-striped">
-                                    <tr>
-                                        <th>Satellite Connected</th>
-										<td>Satellite-11</td>
-									</tr>
 									<tr>
                                         <th>Status</th>
 										<td id="live_state_widget">
 											<div style="width: 100px;background-color:rgba(225, 99, 132, 0.8);text-align: center; padding-top: 3px; padding-bottom:3px; border-radius: 10px;">InActive</div>
 										</td>
-									</tr>
-									<tr>
-                                        <th>Speed</th>
-										<td>8 Km/Hr</td>
 									</tr>
 									<tr>
                                         <th>Ignition State</th>
@@ -191,20 +185,18 @@
 										<td>Moving</td>
 									</tr>
 									<tr>
-                                        <th>Battery Capacity</th>
-										<td id="live_cap_widget">
-											<div class="battery-bar">
-												<div class="battery-fill-1" style="width: 20%;"></div>
-											</div>
+                                        <th>GSM Operator</th>
+										<td>Jhon Deo</td>
+                                    </tr>
+									<tr>
+                                        <th>GSM Signal</th>
+										<td>
+											<i class='fa-solid fa-tower-broadcast' style='font-size:20px;color:red'>
 										</td>
                                     </tr>
 									<tr>
-                                        <th>Battery Power</th>
-										<td>740.4 W</td>
-                                    </tr>
-									<tr>
-                                        <th>GSM Operator</th>
-										<td>Ramanathan</td>
+                                        <th>GSM Area</th>
+										<td>Chennai</td>
                                     </tr>
                             </table>
                     </div>
@@ -229,9 +221,13 @@
 						</div><br><br>
 						<table id="data-table-basic" class="table table-striped">
                             <tr>
-                                <th>Device ID</th>
-								<td>65423415564585</td>
-							</tr>
+                                <th>Battery</th>
+								<td id="live_cap_widget">
+									<div class="battery-bar">
+										<div class="battery-fill-1" style="width: 20%;"></div>
+									</div>
+								</td>
+                            </tr>
 							<tr>
                                 <th>Battery Voltage</th>
 								<td>12.34 V</td>
@@ -250,7 +246,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
 					<div class="form-element-list">
                         <div class="basic-tb-hd">
-                            <h2>GPS Distance</h2>
+                            <h2>GPS</h2>
 						</div>
 						<div class="email-round-nock">
 							<div class="circle">
@@ -269,9 +265,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="rectangle">Optimal Signal</div>
-						<br><br>
+						<br>
+						<div class="form-element-list" style="width: 100%; height: 255px;">
 						<table id="data-table-basic" class="table table-striped">
+							<tr>
+                                <th>Satellite Connected</th>
+								<td>11</td>
+							</tr>
                             <tr>
                                 <th>LONGITUDE :</th>
 								<td>77.7153816</td>
@@ -285,6 +285,7 @@
 								<td>560.7 m</td>
 							</tr>
                         </table>
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
